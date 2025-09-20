@@ -50,3 +50,64 @@ Each subject contributes **20 questions (20 marks max)**.
    ```bash
    git clone https://github.com/your-username/omr-evaluation.git
    cd omr-evaluation
+
+python -m venv venv
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+
+pip install -r requirements.txt
+
+streamlit run app.py
+
+📂 Usage
+
+Upload Answer Key
+
+Upload the provided Excel file (Key (Set A and B).xlsx) from the sidebar.
+
+The app automatically parses and maps answers.
+
+Single Sheet Mode
+
+Upload a single .jpg/.jpeg/.png OMR sheet.
+
+Select Set A or Set B.
+
+View per-subject breakdown, total score, and graded preview.
+
+Batch (ZIP) Mode
+
+Upload a .zip file containing student OMR sheets inside Set A/ or Set B/ folders.
+
+The app processes all sheets automatically.
+
+Displays leaderboard, subject averages, pie chart distribution, and top scorers.
+
+Download consolidated results as .csv.
+
+## 📊 Sample Output
+
+**Leaderboard**
+https://github.com/sinankabeer/automated-omr-evaluating-system/blob/main/images/Overall%20leaderboard.png
+
+**Subject-wise Averages**
+https://github.com/sinankabeer/automated-omr-evaluating-system/blob/main/images/Subject%20wise%20averages.png
+
+**Graded Sheet Preview**
+https://github.com/sinankabeer/automated-omr-evaluating-system/blob/main/images/Graded%20sheet%20preview.png
+
+**Pie chart**
+https://github.com/sinankabeer/automated-omr-evaluating-system/blob/main/images/Pie%20chart.png
+
+**Top score per subject**
+https://github.com/sinankabeer/automated-omr-evaluating-system/blob/main/images/Top%20score%20per%20subject.png
+
+**Download result CSV**
+https://github.com/sinankabeer/automated-omr-evaluating-system/blob/main/images/Download%20Result%20CSV.png
+
+## 🌐 Deployment
+
+The project is deployed here:  
+👉 [Streamlit App]https://automated-omr-evaluating-system-n5ejtwee77aes2zwetpgzm.streamlit.app/
+
+
